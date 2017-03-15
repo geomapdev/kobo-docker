@@ -8,7 +8,7 @@ if [[ ! -z "${PUBLIC_DOMAIN_NAME}" ]]; then
 elif [[ ! -z "${HOST_ADDRESS}" ]]; then
     # Local.
     export KOBOFORM_URL="http://${HOST_ADDRESS}:${KPI_PUBLIC_PORT}"
-    export KOBOCAT_URL="http://${HOST_ADDRESS}:${KPI_PUBLIC_PORT}"
+    export KOBOCAT_URL="http://${HOST_ADDRESS}:${KOBOCAT_PUBLIC_PORT}"
     export ENKETO_URL="http://${HOST_ADDRESS}:${ENKETO_EXPRESS_PUBLIC_PORT}"
     export CSRF_COOKIE_DOMAIN="${HOST_ADDRESS}"
     export DJANGO_ALLOWED_HOSTS="${HOST_ADDRESS}"
